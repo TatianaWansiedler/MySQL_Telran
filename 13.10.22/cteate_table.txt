@@ -1,0 +1,7 @@
+create table goods (
+	id integer prymary key,
+  	title varchar(30),
+  	quantity integer check(quantity > 0),
+  	price integer,
+  	in_stock varchar(1) check(in_stock in ('Y', 'N'))
+);
